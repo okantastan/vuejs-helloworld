@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+
+	<div id="app">
+		<h1 v-if="isLoggedIn">{{message}} {{username}}</h1>
+		<h1 v-if="!isLoggedIn">Ziyaretçi</h1>
+	</div>
+</body>
+</html>
